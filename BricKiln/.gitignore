@@ -2,7 +2,6 @@
 # Created by https://www.gitignore.io/api/maven,eclipse
 
 ### Eclipse ###
-
 .metadata
 bin/
 tmp/
