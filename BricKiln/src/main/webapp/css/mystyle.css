@@ -1,0 +1,11 @@
+@CHARSET "ISO-8859-1";
+
+#userMenu ul li ul li
+{
+    display: none;
+}
+
+#userMenu ul li:hover ul li
+{
+	display: block;
+}

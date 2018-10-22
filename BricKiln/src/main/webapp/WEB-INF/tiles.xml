@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+ <!DOCTYPE tiles-definitions PUBLIC 
+ "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" 
+ "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+ 
+  <tiles-definitions>
+	  <definition name="base" template="/BricKiln/visitorTemplate.jsp">
+		  <put-attribute name="title" value="BricKiln"/>
+		  <put-attribute name="header" value="/BricKiln/header.jsp"/>
+		  <put-attribute name="home" value="/BricKiln/home.jsp"/>
+		  <put-attribute name="footer" value="/BricKiln/footer.jsp"/>
+	   </definition>
+	   
+	   <definition name="userBase" template="/BricKiln/userTemplate.jsp">
+		  <put-attribute name="title" value="BricKiln"/>
+		  <put-attribute name="header" value="/BricKiln/header.jsp"/>
+		  <put-attribute name="userMenu" value="/BricKiln/userMenu.jsp"/>
+		  <put-attribute name="footer" value="/BricKiln/footer.jsp"/>
+	   </definition>
+	   
+	   <definition name="signup" extends="base">
+	   		<put-attribute name="body" value="/BricKiln/SignUp.jsp" />
+	   </definition>
+	   
+	   <definition name="registered" extends="base">
+	    	<put-attribute name="body" value="/BricKiln/registered.jsp"/>
+	   </definition>
+	   
+	   <definition name="relogin" extends="base">
+	    	<put-attribute name="body" value="/BricKiln/relogin.jsp"/>
+	   </definition>
+	   
+	   <definition name="loggedOut" extends="base">
+	   		<put-attribute name="body" value="/BricKiln/loggedOut.jsp"/>
+	   </definition>
+	   
+	    <definition name="home" extends="userBase">
+	    	<put-attribute name="body" value="/BricKiln/home.jsp"/>
+	    </definition>
+	    
+	    <definition name="newEmployee" extends="userBase">
+	    	<put-attribute name="body" value="/BricKiln/EmployeeMaster.jsp"/>
+	    </definition>
+	    
+	    <definition name="employeeAdded" extends="userBase">
+	    	<put-attribute name="body" value="/BricKiln/EmployeeAdded.jsp"/>
+	    </definition>
+	    
+	    <definition name="employeeUpdated" extends="userBase">
+	    	<put-attribute name="body" value="/BricKiln/EmployeeAdded.jsp"/>
+	    </definition>
+	    
+	    <definition name="viewEmployee" extends="userBase">
+	    	<put-attribute name="body" value="/BricKiln/ViewEmployee.jsp"/>
+	    </definition>
+	    
+	    <definition name="editEmployee" extends="userBase">
+	    	<put-attribute name="body" value="/BricKiln/EditEmployee.jsp"/>
+	    </definition>
+	    
+	    <definition name="rateMaster" extends="userBase">
+	    	<put-attribute name="body" value="/BricKiln/RateMaster.jsp"/>
+	    </definition>
+	    
+	    <definition name="newBrick" extends="userBase">
+	    	<put-attribute name="body" value="/BricKiln/BrickMaster.jsp"/>
+	    </definition>
+	    
+	    <definition name="brickAdded" extends="userBase">
+	    	<put-attribute name="body" value="/BricKiln/BrickAdded.jsp"/>
+	    </definition>
+	    
+	    <definition name="leaseAgreement" extends="userBase">
+	    	<put-attribute name="body" value="/BricKiln/leaseAgreement.html"/>
+	    </definition>
+	    
+	    <definition name="pathai" extends="userBase">
+	    	<put-attribute name="body" value="/BricKiln/pathaiMaster.html"/>
+	    </definition>
+	    
+	    <definition name="waste" extends="userBase">
+	    	<put-attribute name="body" value="/BricKiln/kharabaMaster.html"/>
+	    </definition>
+	    
+	    <definition name="order" extends="userBase">
+	    	<put-attribute name="body" value="/BricKiln/orderMaster.html"/>
+	    </definition>
+	    
+	    <definition name="receiptVoucher" extends="userBase">
+	    	<put-attribute name="body" value="/BricKiln/receiptVoucher.html"/>
+	    </definition>
+	    
+	    <definition name="paymentVoucher" extends="userBase">
+	    	<put-attribute name="body" value="/BricKiln/paymentVoucher.html"/>
+	    </definition>
+	    
+	    <definition name="addCarrier" extends="userBase">
+	    	<put-attribute name="body" value="/BricKiln/addCarrier.html"/>
+	    </definition>
+	    
+	    <definition name="nikasi" extends="userBase">
+	    	<put-attribute name="body" value="/BricKiln/nikasiMaster.html"/>
+	    </definition>
+	   
+	   <definition name="userProfile" extends="userBase">
+	    	<put-attribute name="body" value="/BricKiln/userProfile.jsp"/>
+	   </definition>
+	   
+	   <definition name="profileUpdated" extends="userBase">
+	    	<put-attribute name="body" value="/BricKiln/profileUpdated.jsp"/>
+	   </definition>
+  </tiles-definitions>

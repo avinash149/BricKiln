@@ -1,0 +1,65 @@
+			
+	<div class="card" style="max-width: 560px;">
+  		<div class="card-header" style="background-color: #ADD8E6">
+    		<h5>Pathai Master</h5>
+  		</div>
+  		<div class="card-body">
+			<form action="" method="post">
+				<div class="form-group row">
+			      <label for="date" class="col-md-3 col-form-label">Date</label>
+			      <div class="col-md-6">
+				      <input type="date" class="form-control" id="date" placeholder="Enter date">
+			      </div>
+			    </div>
+			    
+				<div class="form-group row">
+			      <label for="location" class="col-md-3 col-form-label">Location Name</label>
+			      <div class="col-md-6">
+			        <input type="text" class="form-control" id="location" placeholder="Enter Location">
+			      </div>
+			    </div>			
+				
+				<table class="table table-bordered table-striped table-hover">
+					<thead bgcolor=#ADD8E6>
+				      <tr>
+				        <th style="width:10%">SNO</th>
+				        <th style="width:30%">Name</th>
+				        <th style="width:30%">Father_Name</th>
+				        <th style="width:20%">Tot Brick</th>
+				        <th style="width:10%">Delete</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+						<tr>
+							<td>1</td>
+							<td>Arun Singh</td>
+							<td>Akhilesh Singh</td>							
+							<td><input type="text" class="form-control form-control-sm" id="totBrick"></td>
+<!-- 							<td>brick</td> -->
+							<td><a href="deleteCity.process?id=${cobj.id}">Delete</a></td>
+						</tr>
+												
+						<!-- <c:forEach items="${cities}" var="cobj">
+						<tr>
+							<td>${cobj.city}</td>
+							<td><a href="editCity.process?id=${cobj.id}">Edit</a></td>
+							<td><a href="deleteCity.process?id=${cobj.id}">Delete</a></td>
+						</tr>
+						</c:forEach> -->	
+					</tbody>			
+				</table>
+				    
+				<div class="form-group row">
+					<div class="col-md-6">
+						<button type="submit" class="col-md-12 btn btn-primary">View Waste List</button>
+<!-- 						&nbsp;&nbsp;&nbsp;&nbsp; <label for="viewEmployee" class="col-form-label">View pather list? <a href="viewEmployee.mvc">click here</a></label> -->
+					</div>	
+					
+					<div class="col-md-6">
+						<button type="submit" class="col-md-12 btn btn-primary">Waste</button>
+					</div>
+																
+				</div>				
+			</form>
+		</div>
+	</div>
