@@ -15,7 +15,7 @@
 bin/**
 
 # Maven #
-target/
+/target/
 /.mvn
 /.maven
 /.repository
