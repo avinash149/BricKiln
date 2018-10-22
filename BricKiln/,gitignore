@@ -1,8 +1,22 @@
-# Eclipse
-.classpath
-.project
-.settings/
+# Backupfiles from mergetools #
+*.orig
+# Java Class Files #
+*.class
 
-# Maven
-log/
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+
+# Eclipse #
+/.project
+/.settings
+bin/**
+
+# Maven #
 target/
+/.mvn
+/.maven
+/.repository
+.flattened-pom.xml
